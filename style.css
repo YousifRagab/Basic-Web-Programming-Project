@@ -1,0 +1,351 @@
+/*
+Main Universal Items - Line 13
+Navigation Bar       - Line 32
+Footer               - Line 63
+Gallery Page         - Line 85
+Contact Page         - Line 104
+Home Page            - Line 144
+Specs Page           - Line 268
+About Page           - Line 314
+*/
+
+
+/*Main (Universal for all pages)*/
+p,a,i{
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0px;
+    background: black;
+    font-family: sans-serif,'Roboto';
+}
+
+.header {
+    background-color: black;
+    text-align: center;
+    padding: 0px 15px 0px 15px;
+}
+/*END - Main*/
+
+
+/*Navigation Bar*/
+.topnav {
+    display: flex;
+    background-color: black;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+}
+
+.topnav a {
+    float: left;
+    text-align: center;
+    color: #f2f2f2;
+    display: block;
+    text-decoration: none;
+    padding: 25px 12px;
+}
+
+.topnav a:hover {
+    background-color: white;
+    color: black;
+}
+
+/*Fonts*/
+.topnav *{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+/*END - Navigation Bar*/
+
+
+/*Footer*/
+#footer {
+    background-color: black;
+    text-align: center;
+    padding: 15px 0px 20px 0px;
+}
+.topnav2 a {
+    text-align: center;
+    color: #f2f2f2;
+    text-decoration: none;
+    padding: 16px 14px;
+}
+.topnav2 a:hover {
+    color: #999999;
+}
+
+p,i{
+    color: white;
+}
+/*END - Footer*/
+
+
+/*Gallery (Gallery Page)*/
+.gallerybody{
+    display: flex;
+}
+
+.HeaderTitle{
+    padding: 70px 0px 15px 0px;
+    background: #161616;
+}
+
+.HeaderTitle > h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 65px;
+    color: white;
+}
+/*END - Gallery (Gallery Page)*/
+
+
+/*Contact (Contact Page)*/
+.contactform{
+    margin-left: auto;
+    margin-right: auto;
+}
+.contact{
+    background: #161616;
+    padding-bottom: 30px;
+}
+
+.contactfield{
+    margin: 0px 3px 10px 3px;
+    padding: 10px 0px 10px 15px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+.contactmessage{
+    padding: 10px 0px 200px 15px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+.contactsendbutton, .CoverButton{
+    padding: 7px 45px 7px 45px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    margin-left: 135px;
+}
+
+.contactsend input:hover
+{
+    background: rgb(187, 187, 187);
+}
+/*END - Contact (Contact Page)*/
+
+
+/*MAIN (Home Page)  -Includes Each Banner*/
+.CoverButton{
+    background: white;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.Cover.Six a:hover{
+    color: white;
+    background: rgb(255, 58, 58);
+}
+
+.CoverText{
+    margin: 0px;
+    font-size: 80px;
+    font-family: 'PT Sans';
+    font-weight: bold;
+    line-height: 70px;
+}
+.CoverText.One
+{
+    padding: 7% 20px 0px 5%;
+    font-size: 70px;
+}
+.CoverText.Two
+{
+    padding: 18% 20px 0px 5%;
+}
+.CoverText.Two.Secondary{
+    font-size: 20px;
+    padding-top: 0;
+    margin-top: -20px;
+    font-weight: 400;
+}
+.CoverText.Three
+{
+    padding-top: 3%;
+    font-size: 50px;
+    text-align: center;
+}
+.CoverText.Three.Secondary{
+    font-size: 23px;
+    padding-top: 0px;
+    margin-top: -20px;
+    font-weight: 400;
+}
+.CoverText.Four
+{
+    padding-top: 30px;
+    padding-bottom: 35px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 33px;
+}
+.CoverText.Five
+{
+    font-size: 55px;
+    padding: 1% 20px 0px 2%;
+}
+.CoverText.Five.Secondary{
+    font-size: 20px;
+    padding-top: 0;
+    margin-top: -30px;
+    font-weight: 400;
+}
+.CoverText.Six
+{
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.Cover{
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 700px;
+}
+.Cover.One{
+    background-image: url("assets/1dark.png");
+}
+.Cover.Two{
+    background-image: url("assets/Profissional1Flipped.png");
+}
+.Cover.Three{
+    background-image: url("assets/UltraSlimBanner.png");
+    height: 320px;
+}
+.Cover.Four{
+    background-image: url("assets/CapturedPhoto1Blurred.png");
+    height: 700px;
+    text-align: center;
+}
+.Cover.Five{
+    background-image: url("assets/2.png");
+    height: 635px;
+}
+.Cover.Six{
+    height: 150px;
+    text-align: center;
+    padding-top: 20px;
+    background: #161616;
+}
+
+/*Change Header Font*/
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+/*Animated Logo*/
+.HeaderLogo{
+    text-align: center;
+    padding-top: 20%;
+    animation: logoIn 4s;
+}
+@keyframes logoIn {
+    0% {padding-top: 40%; opacity: 0;}
+    100% {padding-top: 20%; opacity: 1;}
+ }
+/*END - MAIN (Home Page)*/
+
+
+/*Specs (Specifications Page)*/
+.line{
+    margin: -5px auto -5px auto;
+    width: 370px;
+    border: 2px solid white;
+    border-radius: 70px;
+}
+
+.specsHeader {
+    background-color: black;
+    text-align: center;
+}
+.Phone{
+    margin: 0px;
+    background: black;
+    text-align: center;
+    color: white;
+}
+.specsTable, .specsTable *{
+    margin: 10px;
+    border: 1px solid white;
+    border-collapse: collapse;
+    color: white;
+    background-color: black;
+}
+
+.specsTable{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.photosBanner{
+    text-align: center;
+}
+
+.photosBanner *{
+    padding: 0px 5px 10px 5px;
+}
+
+.MainBody{
+    padding-top: 75px;
+}
+/*END - Specs*/
+
+
+/*About (About Page)*/
+.Animation{
+    padding-top: 75px;
+    padding-bottom: 300px;
+    margin: 0px;
+    background-size: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/3.png"),
+    center no-repeat;
+    font-family: sans-serif , "Roboto";
+    color: rgb(255, 255, 255);
+    animation: aboutanim 4s;
+}
+.title, .p1{
+    padding-left: 40px;
+    padding-right: 30%;
+    color: rgb(255, 255, 255);
+
+}
+.p1{
+    padding-left: 60px;
+    font-size: 24px;
+}
+
+@keyframes aboutanim{
+    0%   {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+/*Location Title and Map*/
+.Location{
+    text-align: center;
+}
+
+.LocationTitle{
+    padding-top: 15px;
+    margin: 0px;
+}
+/*END - About*/
