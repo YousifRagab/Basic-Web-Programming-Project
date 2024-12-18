@@ -13,3 +13,6 @@ Third year, Computer Science, Faculty of Computers and Informatics.
   <li>Contact Form</li>
   <li>iframe (maps)</li>
 </ul>
+
+<h6>Note</h6>
+Please not that the Contact form "Send" button doesn't work since this proejct was solely made as a Front End and simple project.
